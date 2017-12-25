@@ -1,4 +1,4 @@
-microservice
+Microservice
 ============
 
 Test with fabric8
