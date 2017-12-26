@@ -10,4 +10,4 @@ def index():
 
     This view will return an empty JSON mapping.
     """
-    return {'data': 'test fabric8'}
+    return {'data': 'test fabric8 !'}
