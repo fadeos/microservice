@@ -1,5 +1,8 @@
 #!/usr/bin/env groovy
 node {
+  stage("OTA preparation"){
+    sh "pip install -r requirements.txt"
+  }
   stage("OTA Unit Test"){
     echo 'OK'
   }
