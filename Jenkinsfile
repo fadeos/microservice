@@ -1,10 +1,7 @@
 #!/usr/bin/env groovy
 node {
   stage("OTA preparation"){
-    sh "PATH=$WORKSPACE/venv/bin:/usr/local/bin:$PATH"
-    sh "python -m venv"
-    sh ". venv/bin/activate"
-    sh "pip install -r requirements.txt"
+    echo 'OK'
   }
   stage("OTA Unit Test"){
     echo 'OK'
