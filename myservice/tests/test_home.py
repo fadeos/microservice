@@ -11,7 +11,7 @@ class TestService(unittest.TestCase):
         app = TestApp(tested_app)
         home = app.get('/')
         body = home.json['data']
-        self.assertEqual(body, 'test ok')
+        self.assertEqual(body, 'test fabric8')
 
 if __name__ == '__main__':
     unittest.main()
