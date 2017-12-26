@@ -1,15 +1,15 @@
 #!/usr/bin/env groovy
 node {
-  stage("Unit Test"){
+  stage("OTA Unit Test"){
     echo 'OK'
   }
-  stage("Fonctionel Test"){
+  stage("OTA Functional Test"){
     echo 'OK'
   }
-  stage("Integration Test"){
+  stage("OTA Integration Test"){
     echo 'OK'
   }
-  stage("Deployment"){
+  stage("OTA release Approuved"){
     echo 'OK'
   }
 }
