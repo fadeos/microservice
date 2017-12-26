@@ -2,7 +2,8 @@
 node {
   stage("OTA preparation"){
     sh "PATH=$WORKSPACE/venv/bin:/usr/local/bin:$PATH"
-    sh "if [ ! -d 'buildenv' ]; then python3 -m venv buildenv fi . buildenv/bin/activate"
+    sh "if [ ! -d 'buildenv' ]; then python3 -m venv buildenv fi"
+    sh ". buildenv/bin/activate"
     sh "pip install -r requirements.txt"
   }
   stage("OTA Unit Test"){
