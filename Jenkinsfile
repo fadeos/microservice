@@ -1,21 +1,4 @@
 #!/usr/bin/env groovy
-#node {
-#  stage("OTA preparation"){
-#    echo 'OK'
-#  }
-#  stage("OTA Unit Test"){
-#    echo 'OK'
-#  }
-#  stage("OTA Functional Test"){
-#    echo 'OK'
-#  }
-#  stage("OTA Integration Test"){
-#    echo 'OK'
-#  }
-#  stage("OTA release Approuved"){
-#    echo 'OK'
-#  }
-#}
 @Library('github.com/fabric8io/fabric8-pipeline-library@master')
 def utils = new io.fabric8.Utils()
 clientsNode{
